@@ -1,4 +1,6 @@
-export function About() {
+import taylor from '../assets/taylor.jpg'
+
+export default function About() {
   return (
     <section id='about'>
       <h2>
@@ -17,7 +19,7 @@ export function About() {
         for the perfect cup of coffee or going on nature walks.
       </p>
       <img
-        src='./assets/taylor.jpg'
+        src={taylor}
         alt='Profile photo'
         className='profile-photo'
       />

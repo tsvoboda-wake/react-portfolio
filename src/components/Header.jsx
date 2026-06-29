@@ -1,7 +1,9 @@
-export function Header() {
+import logo from '../assets/ts-logo.png'
+
+export default function Header() {
   return (
-    <header>
-      <img src="./assets/ts-logo.png" alt="Logo" className="logo" />
+    <header className='header'>
+      <img src={logo} alt="Logo" className="logo" />
       <nav>
         <ul>
           <li><a href="./about">About</a></li>
