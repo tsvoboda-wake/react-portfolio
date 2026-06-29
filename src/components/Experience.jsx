@@ -1,8 +1,12 @@
+import { Button } from 'react-bootstrap';
+
 export default function Experience() {
   return (
     <section id='experience'>
       <h3>
-        <button className='experience-btn'>EXPERIENCE</button>
+        <Button className='experience-btn' variant='primary'>
+          EXPERIENCE
+        </Button>
       </h3>
       <div>
         <div>

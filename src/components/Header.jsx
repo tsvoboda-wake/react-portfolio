@@ -6,10 +6,10 @@ export default function Header() {
       <img src={logo} alt="Logo" className="logo" />
       <nav>
         <ul>
-          <li><a href="./about">About</a></li>
-          <li><a href="./projects">Projects</a></li>
-          <li><a href="./skills">Skills</a></li>
-          <li><a href="./experience">Experience</a></li>
+          <li><a className='navItem' href="#about">About</a></li>
+          <li><a className='navItem' href="#projects">Projects</a></li>
+          <li><a className='navItem' href="#skills">Skills</a></li>
+          <li><a className='navItem' href="#experience">Experience</a></li>
         </ul>
       </nav>
     </header>

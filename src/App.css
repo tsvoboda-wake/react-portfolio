@@ -1,66 +1,137 @@
+#root {
+  margin: 0;
+  width: 100%;
+}
+
 body {
   margin: 0;
   background-color: #f4f7fb;
   color: #1f2937;
-  line-height: 1.2;
-  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-family: 'Poppins', sans-serif;
 }
- 
+
 main {
   margin: 0 auto;
-  padding: 2rem;
+  line-height: 1.2;
+  width: 80%;
 }
 
-@media (min-width: 768px) {
-  main {
-    width: 80%;
-  }
-}
+/* Header */
 
 header {
+  width: 100%;
   display: flex;
-  flex-wrap: wrap;
-  padding-left: 0;
-  margin-bottom: 0;
   position: sticky;
   top: 0;
+  background-color: #f4f7fb;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.5);
+  flex-shrink: 0;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  margin: 1rem;
+  border-radius: 50% 50% 10% 10%;
 }
 
 nav li {
-  display: inline-block;
   list-style: none;
+  padding: 0.5rem;
 }
 
 nav li a {
   text-decoration: none;
+  color: #1f2937;
 }
 
-.logo {
-  width: 150px;
-  height: 150px;
+@media (min-width: 768px) {
+  .logo {
+    float: inline-start;
+  }
+
+  header {
+    flex-wrap: wrap;
+  }
+
+  nav li {
+    display: inline-block;
+  }
 }
- 
+
+h1,
+h2,
+h3,
+nav li a {
+  font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+}
+
+#about,
+#projects,
+#skills,
+#experience {
+  padding-top: 1.5rem;
+}
+
+/* About */
+
+.profile-photo {
+  width: 200px;
+  height: auto;
+  border-radius: 50%;
+}
+
+@media (min-width: 768px) {
+  #about-body {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #about-text {
+    margin-right: 1rem;
+  }
+
+  .profile-photo {
+    border-radius: 50% 50% 50% 0;
+  }
+}
+
+/* Projects */
+
 .project-card {
   border: 1px solid #d1d5db;
   border-radius: 12px;
   padding: 1rem;
   background-color: #ffffff;
-}
-
-.profile-photo {
-  width: 200px;
-  height: auto;
-}
-
-.profile-photo img {
-  width: 100%;
-  height: auto;
-  max-width: 400px;
-  border-radius: 15%;
-  margin: auto;
+  margin: 1rem auto;
+  /* display: flex;
+  flex-wrap: wrap;
+  justify-content: center; */
 }
 
 .project-card img {
-  width: 400px;
+  width: 80%;
   height: auto;
+}
+
+footer {
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 -5px 5px -5px rgba(0, 0, 0, 0.5);
+  background-color: #f4f7fb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+footer p {
+  margin: 0.5rem;
+}
+
+footer a {
+  text-decoration: none;
+  color: #1f2937;
 }
