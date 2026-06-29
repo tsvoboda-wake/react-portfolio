@@ -1,7 +1,7 @@
 export function Header() {
   return (
     <header>
-      <h1>My Portfolio</h1>
+      <img src="./assets/ts-logo.png" alt="Logo" className="logo" />
       <nav>
         <ul>
           <li><a href="./about">About</a></li>
