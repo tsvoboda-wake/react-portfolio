@@ -1,14 +1,17 @@
-import { Button } from 'react-bootstrap';
-
+import { useState } from 'react';
 export default function Experience() {
+  const [shouldShow, setShouldShow] = useState(false);
   return (
     <section id='experience'>
-      <h3>
-        <Button className='experience-btn' variant='primary'>
-          EXPERIENCE
-        </Button>
-      </h3>
-      <div>
+      <button
+        className='experience-btn'
+        variant='primary'
+        onClick={() => setShouldShow(true)}
+      >
+        View Work Experience
+      </button>
+
+      {shouldShow && (
         <div>
           <div>
             <div>Senior Front-End Developer</div>
@@ -73,7 +76,7 @@ export default function Experience() {
             </li>
           </ul>
         </div>
-      </div>
+      )}
     </section>
   );
 }
