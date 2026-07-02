@@ -9,6 +9,8 @@ export default function Footer() {
         >
           Visit my GitHub
         </a>
+      </p>
+      <p>
         <a
           href='https://www.linkedin.com/in/taylor-svoboda/'
           target='_blank'
@@ -17,6 +19,7 @@ export default function Footer() {
           Let&apos;s connect on LinkedIn
         </a>
       </p>
+
       <p>&copy; 2026 Taylor Svoboda. All rights reserved.</p>
     </footer>
   );
