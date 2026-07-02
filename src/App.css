@@ -129,13 +129,18 @@ nav li a,
 }
 
 /* Experience */
+
 .experience-btn {
   color: white;
   background-color: #1f2937;
   border: none;
   border-radius: 0.5rem;
   padding: 1rem;
-  margin: 1rem;
+  margin: 1rem 0;
+}
+
+.experience-content {
+  margin-bottom: 3rem;
 }
 
 /* Footer */

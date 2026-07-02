@@ -6,13 +6,13 @@ export default function Experience() {
       <button
         className='experience-btn'
         variant='primary'
-        onClick={() => setShouldShow(true)}
+        onClick={() => setShouldShow(!shouldShow)}
       >
-        View Work Experience
+        {shouldShow ? 'Hide Work Experience' : 'View Work Experience'}
       </button>
 
       {shouldShow && (
-        <div>
+        <div className='experience-content'>
           <div>
             <div>Senior Front-End Developer</div>
             <div>Jan 2022 - present</div>
